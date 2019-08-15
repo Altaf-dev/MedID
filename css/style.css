@@ -1,0 +1,22 @@
+.header{
+    background: url("../img/header_bg.png")center/cover no-repeat;
+
+/*458 983*/
+}
+.logo{
+    background: #ff5656;
+    height: 93px;
+    width: 236px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+.logo-img{
+    height: 40px;
+}
+.shadow{
+    background-color: rgba();
+    height: 983px;
+    width: 458px;
+
+}
