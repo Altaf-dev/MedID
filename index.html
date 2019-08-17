@@ -1,48 +1,132 @@
 <!doctype html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport"
-          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<meta charset="UTF-8">
+	<meta name="viewport"
+	      content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="css/style.css">
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400i,700,700i,800i&display=swap&subset=cyrillic-ext" rel="stylesheet">
     <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="css/bootstrap.css">
-    <title>Document</title>
+	<title>Medid</title>
 </head>
 <body>
-    <div class="header">
-        <div class="container">
-            <div class="logo"><img class="logo-img" src="img/logo.png" alt=""></div>
-            <ul class="nav">
-                <ul>
-                    <li class="about"><a href="#">О Med ID</a></li>
-                    <li class="login"><img src="img/noun_Login_1038293.png" alt=""><a href="#">Войти</a></li>
-                </ul>
-                <ul>
-                    <li class="lang"><a href="#">KZ</a></li>
-                    <li class="lang"><a href="#">RU</a></li>
-                </ul>
-            </ul>
-            <div class="shadow">
-                <div class="qrfid">
-                    <img class="qr" src="img/qr.png" alt="qr">
-                    <img class="rfid" src="img/rfid.png" alt="rfid">
-                </div>
-                <p>Вам стало плохо, потеряли сознание, упали. Медицинский браслет </p>
-                <p>С технологией QR и RFID</p>
+    <header class="header">
+        <div class="logo-nav">
+            <div class="logo">
+                <img src="img/logo.png" alt="logo">
             </div>
-            <img src="img/medid.png" alt="medid">
-            <h1>система мониторинга пациентов</h1>
-            <button>заказать</button>
+            <nav class="menu">
+                <ul>
+                    <li><a href="#">О Med ID</a></li>
+                    <li><a href="#"><img src="img/noun_Login_1038293.png" alt="login">Войти</a></li>
+                </ul>
+                <ul>
+                    <li><a href="#" class="lang">KZ</a></li>
+                    <li><a href="#" class="lang">RU</a></li>
+                    <li><a href="#" class="lang">EN</a></li>
+                </ul>
+            </nav>
         </div>
-    </div>
-    <div class="body">
-
-    </div>
+        <div class="bangle">
+            <h2 class="qr">QR</h2>
+            <h2 class="rfid">RFID</h2>
+            <img src="img/qr.png" alt="qr" class="bangle_qr">
+            <img src="img/rfid.png" alt="rfid" class="bangle_rfid">
+            <h3>Вам стало плохо, потеряли сознание, упали. Медицинский браслет подскажет, какая вам нужна помощь</h3>
+            <h3>С технологией QR и RFID</h3>
+        </div>
+        <div class="logo_medid">
+            <img src="img/medid.png" alt="logomedid">
+        </div>
+        <div class="title">
+            <h1>СИСТЕМА МОНИТОРИНГА ПАЦИЕНТОВ</h1>
+        </div>
+        <button class="order">Заказать</button>
+    </header>
+    <div class="main">
+        <h2 class="main-title">Современный медицинский идентификатор пациента</h2>
+        <div class="acces">
+            <img src="" alt="">
+            <h3>Мгновенный доступ</h3>
+            <p>Используя систему Med ID вы мгновенно получаете информацию о пациенте, его заболевании, а также рекомендациям к оказанию первой медицинской помощи</p>
+        </div>
+        <div class="story">
+            <img src="" alt="">
+            <h3>История обращений</h3>
+            <p>Ваш лечащий врач получает доступ к полной истории обращений в лечебные учереждения, назначений и лечебных процедур</p>
+        </div>
+        <div class="alert">
+            <img src="" alt="">
+            <h3>Оповещение родных</h3>
+            <p>При сканировании QR-кода браслета данные о считывании мгновенно передаются вашим доверенным лицам вместе с контактной информацией человека, который оказал помощь</p>
+        </div>
+        <h2>Кому будет полезно</h2>
+        <div class="info">
+            <div class="info-block1">
+                <img src="" alt="" class="info-block">
+                <img src="" alt="">
+                <h3>Людям с хроническими заболеваниями</h3>
+                <button><img src="" alt=""></button>
+                <p>
+                Хронические заболевания могут поставить под угрозу жизнь человека в любое время.
+                А какую помощь нужно оказать в случае обострения болезни зачастую знают лишь близкие.
+                Но теперь вам точно смогут помочь. Считав QR-код с браслета, тот, кто окажется рядом,
+                получит информацию о вас, ваших близких и доверенных лицах и сможет оказать первую неотложную помощь.
+                И тем самым спасет вам жизнь. Нужен ли вам этот браслет, решайте сами.
+                Но не забывайте поговорку «Береженного Бог бережет».
+                </p>
+            </div>
+            <div class="info-block2">
+                <img src="" alt="" class="info-block">
+                <img src="" alt="">
+                <h3>Пожилым людям</h3>
+                <button><img src="" alt=""></button>
+                <p>
+                    С возрастом человек становится все более уязвимым. Если вы хоть раз слышали или читали о стариках,
+                    которые заблудились, потеряли память и не могут найти свой дом и вспомнить телефоны родных,
+                    позаботьтесь о своих родителях, бабушках и дедушках. Медицинский браслет поможет вашим родным не оказаться в затруднительной ситуации.
+                    Считав QR-код с браслета, любой человек может связаться с близкими и, в случае необходимости,
+                    передать данные о пострадавшем в службу скорой помощи. Сегодня мы заботимся о наших родителях, завтра о нас позаботятся наши дети.
+                </p>
+            </div>
+            <div class="info-block3">
+                <img src="" alt="" class="info-block">
+                <img src="" alt="">
+                <h3>Детям</h3>
+                <button><img src="" alt=""></button>
+                <p>
+                    Мы не можем находиться с детьми 24/7. Но мы можем обеспечить безопасность своего чада, даже когда нас нет рядом.
+                    Если ребенок потерялся в большом торговом центре, любой прохожий может отсканировать QR-код браслета, связаться с вами и помочь встретиться.
+                    Если же ваш ребенок, к примеру, получит травму на детской площадке, или ему станет плохо на улице и потребуется врачебная помощь,
+                    браслет расскажет, какая у него группа крови, на что аллергия, есть ли хронические заболевания.
+                    Эти факторы могут оказаться решающими при оказании первой помощи.
+                </p>
+            </div>
+            <div class="info-block4">
+                <img src="" alt="" class="info-block">
+                <img src="" alt="">
+                <h3>Путешественникам</h3>
+                <button><img src="" alt=""></button>
+                <p>
+                    Не нужно больше переживать, что вы плохо знаете язык той страны, куда собираетесь поехать.
+                    Ваш браслет все скажет за вас. В случае, если вам придется обратиться в медучреждение за рубежом,
+                    Med ID сообщит о том, кто вы, какие у вас хронические заболевания, на что бывают аллергические реакции, если ли у вас медицинская страховка.
+                    Позаботьтесь о себе в путешествии. И вы точно сможете донести до врача необходимую информацию, даже если не владеете языком.
+                </p>
+            </div>
+        </div>
+        <div class="foto">
+            <img src="" alt="">
+            <img src="" alt="">
+            <img src="" alt="">
+            <img src="" alt="">
+            <img src="" alt="">
+            <img src="" alt="">
+        </div>
     <div class="footer">
-
+        <img src="" alt="" class="logo-footer">
+        <h4>2018</h4>
+        <a href="mailti:info@medid.kz">info@medid.kz</a>
     </div>
 </body>
 </html>
