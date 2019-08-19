@@ -1,0 +1,57 @@
+body{
+    color: #ffff;
+}
+
+.header{
+    background: url("../img/header_bg.png") no-repeat center/cover;
+    height: 1080px;
+    width: 100%;
+
+}
+.logo-nav{
+    display: flex;
+    justify-content: space-between;  /* Расположение контента по краям блока*/
+    align-items: center;  /*Выравнивание контента в одну линию*/
+    width: 1140px;
+    margin: 0 auto;  /*Выравнивание блока по центру*/
+    height: 95px;
+    border-bottom: 1px solid #fafafa;
+}
+.logo{
+    background-color: #ff5656;
+    height: 93px;
+    width: 234px;
+}
+.medid_logo{
+    display: block;
+    padding: 25px;
+}
+.menu{
+    width: 325px;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.menu-nav{
+
+}
+.menu li {
+    list-style: none;
+
+}
+.logout{
+
+}
+.menu li a{
+    text-decoration: none;
+
+}
+.menu-lang {
+    line-height: 2.5; /*отступы между строками*/
+}
+.menu-lang .lang{
+    background-color: #ffffff;
+    font-size: 16px;
+    border-radius: 25px;
+    padding: 7px;
+}
