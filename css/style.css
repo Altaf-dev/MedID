@@ -2,7 +2,10 @@ body{
     color: #ffff;
     display: flex;
     flex-direction: column;
-    
+    margin: 0;
+    padding: 0;
+
+
 }
 
 .header{
@@ -30,7 +33,7 @@ body{
     padding: 25px;
 }
 .menu{
-    width: 325px;
+    width: 360px;
     height: 100%;
     display: flex;
     justify-content: space-between;
@@ -40,36 +43,46 @@ body{
     margin: 0 auto;
     align-items: center;
 }
-.menu-nav li{
-    padding: 5px;
+.info{
+    display: flex;
+    margin-right: 80px;
 }
 
 .login{    /* Выравнивание в одну линию ссылки с иконкой ссылки */
     display: flex;
     align-items: center;
     flex-flow: row nowrap;
+    height: 15px;
 }
-.login img{
-}
+
 .menu li {
     list-style: none;
-
 }
-.logout{
 
-}
 .menu li a{
     text-decoration: none;
-
+    color: #203352;
+}
+.menu li a img{
+    margin-right: 15px;
 }
 .menu-lang {
+    padding-left: 0;
     line-height: 2.5; /*отступы между строками*/
 }
 .menu-lang .lang{
     background-color: #ffffff;
     font-size: 16px;
-    border-radius: 25px;
+    border-radius: 20px;
     padding: 7px;
+}
+
+.bangle{
+    height: 983px;
+    width: 458px;
+    margin-left: 390px;
+    background-color: rgba(0,0,0,0.5);
+
 }
 .main{
     flex: 1 0 auto;
