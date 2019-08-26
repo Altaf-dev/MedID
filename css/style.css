@@ -78,10 +78,25 @@ body{
 }
 
 .bangle{
+    display: flex;
     height: 983px;
     width: 458px;
-    margin-left: 390px;
+    margin-left: 382px;
     background-color: rgba(0,0,0,0.5);
+    flex-direction: row;
+}
+
+.bangle-img{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 105px;
+
+}
+.bangle_qr{
+    margin-left: 41px;
+}
+.bangle_rfid{
+    margin-left: 53px;
 
 }
 .main{
