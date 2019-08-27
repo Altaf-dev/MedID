@@ -1,5 +1,11 @@
 body{
     color: #ffff;
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+
+
 }
 
 .header{
@@ -27,31 +33,76 @@ body{
     padding: 25px;
 }
 .menu{
-    width: 325px;
+    width: 360px;
     height: 100%;
     display: flex;
     justify-content: space-between;
 }
 .menu-nav{
-
+    display: flex;
+    margin: 0 auto;
+    align-items: center;
 }
+.info{
+    display: flex;
+    margin-right: 80px;
+}
+
+.login{    /* Выравнивание в одну линию ссылки с иконкой ссылки */
+    display: flex;
+    align-items: center;
+    flex-flow: row nowrap;
+    height: 15px;
+}
+
 .menu li {
     list-style: none;
-
 }
-.logout{
 
-}
 .menu li a{
     text-decoration: none;
-
+    color: #203352;
+}
+.menu li a img{
+    margin-right: 15px;
 }
 .menu-lang {
+    padding-left: 0;
     line-height: 2.5; /*отступы между строками*/
 }
 .menu-lang .lang{
     background-color: #ffffff;
     font-size: 16px;
-    border-radius: 25px;
+    border-radius: 20px;
     padding: 7px;
+}
+
+.bangle{
+    display: flex;
+    height: 983px;
+    width: 458px;
+    margin-left: 382px;
+    background-color: rgba(0,0,0,0.5);
+    flex-direction: row;
+}
+
+.bangle-img{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 105px;
+
+}
+.bangle_qr{
+    margin-left: 41px;
+}
+.bangle_rfid{
+    margin-left: 53px;
+
+}
+.main{
+    flex: 1 0 auto;
+}
+
+.footer{
+    flex-shrink: 0;
 }
