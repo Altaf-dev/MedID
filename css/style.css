@@ -4,15 +4,11 @@ body{
     flex-direction: column;
     margin: 0;
     padding: 0;
-
-
-}
-
+    }
 .header{
     background: url("../img/header_bg.png") no-repeat center/cover;
     height: 1080px;
     width: 100%;
-
 }
 .logo-nav{
     display: flex;
@@ -76,12 +72,16 @@ body{
     border-radius: 20px;
     padding: 7px;
 }
-
-.bangle{
+.container-bangle{
+    width: 1140px;
+    margin: 0 auto;  /*Выравнивание блока по центру*/
+    height: 985px;
     display: flex;
+    justify-content: space-between;
+}
+.bangle{
     height: 983px;
     width: 458px;
-    margin-left: 382px;
     background-color: rgba(0,0,0,0.5);
     flex-direction: row;
 }
@@ -97,7 +97,25 @@ body{
 }
 .bangle_rfid{
     margin-left: 53px;
-
+}
+.logo-title{
+    margin-left: 97px;
+    height: 983px;
+    width: 682px;
+}
+.logo_medid{
+    width: 572px;
+    height: 125px;
+    margin-top: 570px;
+    margin-right: 0;
+}
+.title{
+    position: absolute;
+    margin-top: 755px;
+    margin-left: 230px;
+}
+.order{
+    margin: 0 auto;
 }
 .main{
     flex: 1 0 auto;
