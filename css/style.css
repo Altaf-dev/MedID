@@ -1,4 +1,5 @@
 body{
+    font-family: 'Open Sans', sans-serif;
     color: #ffff;
     display: flex;
     flex-direction: column;
@@ -98,6 +99,17 @@ body{
 .bangle_rfid{
     margin-left: 53px;
 }
+.promo h3 {
+    font-size: 20px;
+    font-weight: 400;
+}
+.promo span{
+    color: #ff5656;
+}
+.promo{
+    margin: 54px 60px 0 47px;
+
+}
 .logo-title{
     margin-left: 97px;
     height: 983px;
@@ -111,11 +123,21 @@ body{
 }
 .title{
     position: absolute;
-    margin-top: 755px;
-    margin-left: 230px;
+    margin-top: 760px;
+    margin-left: 460px;
+
 }
 .order{
-    margin: 0 auto;
+    border-width: 0;
+    margin-left: 400px;
+    margin-bottom: 70px;
+    background: linear-gradient(90deg, rgba(235,83,94,1) 0%, rgba(85,147,241,1) 100%);
+    border-radius: 40px;
+    width: 244px;
+    height: 74px;
+    font-size: 18px;
+    font-weight: 700;
+    color: white;
 }
 .main{
     flex: 1 0 auto;
