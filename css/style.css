@@ -140,9 +140,54 @@ body{
     color: white;
 }
 .main{
+    background-color: #f2f2f2;
     flex: 1 0 auto;
 }
-
+.main h2{
+    color: #585858;
+    text-align: center;
+    margin-top: 47px;
+}
+.main_info{
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    height: 474px;
+    width: 1140px;
+}
+.main-title{
+    color: #585858;
+    font-size: 34px;
+    font-weight: 700;
+    text-align: center;
+    margin-top: 43px;
+}
+.info_bangle{
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+}
+.info_bangle h3{
+    color: #008cce;
+}
+.info_bangle p{
+    color: #343434;
+}
+.container_info{
+    margin-top: 46px;
+    margin-bottom: 41px;
+    text-align: center;
+    height: 365px;
+    width: 318px;
+}
+.heart_rate{
+    margin-top: 110px;
+}
+.bangle_black{
+    margin-top: 60px;
+    height: 296px;
+    width: 186px;
+}
 .footer{
     flex-shrink: 0;
 }
