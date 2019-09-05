@@ -1,108 +1,113 @@
 body{
-    color: #ffff;
-    display: flex;
-    flex-direction: column;
-    margin: 0;
+    font-family: 'Roboto', sans-serif;
+}
+body ul {
     padding: 0;
-
-
 }
-
-.header{
-    background: url("../img/header_bg.png") no-repeat center/cover;
-    height: 1080px;
-    width: 100%;
-
-}
-.logo-nav{
-    display: flex;
-    justify-content: space-between;  /* Расположение контента по краям блока*/
-    align-items: center;  /*Выравнивание контента в одну линию*/
-    width: 1140px;
-    margin: 0 auto;  /*Выравнивание блока по центру*/
-    height: 95px;
-    border-bottom: 1px solid #fafafa;
-}
-.logo{
-    background-color: #ff5656;
-    height: 93px;
-    width: 234px;
-}
-.medid_logo{
-    display: block;
-    padding: 25px;
-}
-.menu{
-    width: 360px;
-    height: 100%;
-    display: flex;
-    justify-content: space-between;
-}
-.menu-nav{
-    display: flex;
-    margin: 0 auto;
-    align-items: center;
-}
-.info{
-    display: flex;
-    margin-right: 80px;
-}
-
-.login{    /* Выравнивание в одну линию ссылки с иконкой ссылки */
-    display: flex;
-    align-items: center;
-    flex-flow: row nowrap;
-    height: 15px;
-}
-
-.menu li {
+li {
     list-style: none;
 }
-
-.menu li a{
+li a {
     text-decoration: none;
-    color: #203352;
 }
-.menu li a img{
-    margin-right: 15px;
-}
-.menu-lang {
-    padding-left: 0;
-    line-height: 2.5; /*отступы между строками*/
-}
-.menu-lang .lang{
-    background-color: #ffffff;
-    font-size: 16px;
-    border-radius: 20px;
-    padding: 7px;
+.container {
+    width: 1170px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin: 0 auto;
 }
 
-.bangle{
-    display: flex;
-    height: 983px;
-    width: 458px;
-    margin-left: 382px;
-    background-color: rgba(0,0,0,0.5);
-    flex-direction: row;
+
+
+.main-page{
+	background-image: url(../img/header_bg.png);
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+	height: 100vh;
 }
 
-.bangle-img{
-    display: flex;
-    justify-content: space-between;
-    margin-top: 105px;
+.header { 
+	font-size: 18px;
+	font-weight: 700;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	height: 93px;
+	border-bottom: 1px solid #fff;
+}
+.logo {
+	background-color: #ff5656;
+	width: 243px;
+	height: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.logo img{
+	height: 40px;
+}
+.nav-menu {
+	display: flex;
+}
+.nav-menu a {
+	color: #203352;
+}
+.menu {
+	display: flex;
+	justify-content: space-between;
+	width: 243px;
+	margin-right: 10px;
+}
+.about {
+ 	position: relative;
+}
+.about:after{
+	content: '';
+	position: absolute;
+	border-bottom: 3px solid #ff5656;
+	width: 100%;
+	top: 55px;
+	display: none;
+}
+.about:hover:after{
+	display: block;
+}
+.menu a:hover{
+	color: #ff5656;
+}
+.login{
+	position: relative;
+}
+.login:before{
+	content: url(../img/login.svg);
+	display: block;
+	height: 30px;
+	width: 30px;
+	position: absolute;
+	left: -35px;
+	top: -5px;
+	transition: .3s ease all;
+}
+.login:hover:before{
+	content: url(../img/login-hover.svg);
+}
+.lang {
+	display: flex;
+}
+.lang-select {
+	padding: 10px;
+	background-color: #fff;
+	margin: 0 5px;
+	border-radius: 50%;
+	transition: 0.3s ease all;
+}
+.lang-select:hover {
+	background-color: #000;
+	color: #fff;
+}
 
-}
-.bangle_qr{
-    margin-left: 41px;
-}
-.bangle_rfid{
-    margin-left: 53px;
-
-}
-.main{
-    flex: 1 0 auto;
-}
-
-.footer{
-    flex-shrink: 0;
+.lang-select.active {
+	background-color: #ff5656;
+	color: #fff;
 }
