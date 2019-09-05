@@ -1,6 +1,7 @@
 body{
     font-family: 'Roboto', sans-serif;
 }
+
 body ul {
     padding: 0;
 }
@@ -18,7 +19,6 @@ li a {
 }
 
 
-
 .main-page{
 	background-image: url(../img/header_bg.png);
 	background-position: center;
@@ -26,15 +26,14 @@ li a {
 	background-repeat: no-repeat;
 	height: 100vh;
 }
-
-.header { 
-	font-size: 18px;
-	font-weight: 700;
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
-	height: 93px;
-	border-bottom: 1px solid #fff;
+.header {
+    font-size: 18px;
+    font-weight: 700;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 93px;
+    border-bottom: 1px solid #fff;
 }
 .logo {
 	background-color: #ff5656;
