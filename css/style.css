@@ -1,7 +1,6 @@
 body{
     font-family: 'Roboto', sans-serif;
 }
-
 body ul {
     padding: 0;
 }
@@ -60,6 +59,7 @@ li a {
 }
 .about {
  	position: relative;
+    transition: .3s ease all;
 }
 .about:after{
 	content: '';
@@ -77,6 +77,8 @@ li a {
 }
 .login{
 	position: relative;
+    transition: .3s ease all;
+
 }
 .login:before{
 	content: url(../img/login.svg);
@@ -86,20 +88,22 @@ li a {
 	position: absolute;
 	left: -35px;
 	top: -5px;
-	transition: .3s ease all;
+
 }
 .login:hover:before{
 	content: url(../img/login-hover.svg);
+
 }
 .lang {
 	display: flex;
+    transition: .3s ease all;
 }
 .lang-select {
 	padding: 10px;
 	background-color: #fff;
 	margin: 0 5px;
 	border-radius: 50%;
-	transition: 0.3s ease all;
+
 }
 .lang-select:hover {
 	background-color: #000;
