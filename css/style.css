@@ -12,14 +12,17 @@ li {
 li a {
     text-decoration: none;
 }
+button {
+	border: none;
+	outline: none;
+}
 .container {
+	box-sizing: border-box;
     width: 1170px;
     padding-left: 15px;
     padding-right: 15px;
     margin: 0 auto;
 }
-
-
 .main-page{
 	position: relative;
 	background-image: url(../img/header_bg.png);
@@ -28,6 +31,7 @@ li a {
 	background-repeat: no-repeat;
 	height: 100vh;
 	max-height: 1000px;
+	box-sizing: border-box;
 }
 .header {
     font-size: 18px;
@@ -133,6 +137,10 @@ li a {
 }
 .bangles {
 	width: 460px;
+	box-sizing: border-box;
+	display: flex;
+	justify-content: space-between;
+	padding: 0 26px 0 40px;
 }
 .bangle h2 {
 	margin: 0;
@@ -144,22 +152,78 @@ li a {
 .bangle {
 	position: relative;
 	z-index: 2;
-
+	text-align: center;
 }
-.qr-title {
+.title-item {
 	border-bottom: 1px solid #fff;
 	width: 105px;
+	display: inline-block;
+	padding: 35px 0 20px 0;
 }
 .bangle-image {
 	display: block;
 	text-align: center;
+	margin-top: 20px;
 }
-
-
-
-
-
-
+.description {
+	width: 460px;
+	position: relative;
+	z-index: 2;
+	padding: 0 45px;
+	margin-top: 50px;
+	box-sizing: border-box;
+}
+.description p {
+	color: #fff;
+	font-size: 20px;
+	font-weight: 300;
+}
+.description p span {
+	color: #ff5656;
+	font-style: italic;
+}
+.sale {
+	position: absolute;
+	box-sizing: border-box;
+	flex-direction: column;
+	right: calc((100vw - 1140px) / 2);
+	bottom: 70px;
+	z-index: 3;
+}
+.headline {
+	color: #fff;
+	font-size: 48px;
+	font-weight: 400;
+	text-transform: uppercase;
+}
+.medid {
+	text-align: right;
+}
+.btn {
+	display: block;
+	border-radius: 50px;
+	margin-left: auto;
+	padding: 30px 70px;
+	font-size: 18px;
+	text-transform: uppercase;
+	color: #fff;
+	background: rgba(238,81,92,1);
+	background: -moz-linear-gradient(left, rgba(238,81,92,1) 0%, rgba(241,111,92,1) 0%, rgba(246,41,12,1) 0%, rgba(240,47,23,1) 0%, rgba(84,147,242,1) 100%);
+	background: -webkit-gradient(left top, right top, color-stop(0%, rgba(238,81,92,1)), color-stop(0%, rgba(241,111,92,1)), color-stop(0%, rgba(246,41,12,1)), color-stop(0%, rgba(240,47,23,1)), color-stop(100%, rgba(84,147,242,1)));
+	background: -webkit-linear-gradient(left, rgba(238,81,92,1) 0%, rgba(241,111,92,1) 0%, rgba(246,41,12,1) 0%, rgba(240,47,23,1) 0%, rgba(84,147,242,1) 100%);
+	background: -o-linear-gradient(left, rgba(238,81,92,1) 0%, rgba(241,111,92,1) 0%, rgba(246,41,12,1) 0%, rgba(240,47,23,1) 0%, rgba(84,147,242,1) 100%);
+	background: -ms-linear-gradient(left, rgba(238,81,92,1) 0%, rgba(241,111,92,1) 0%, rgba(246,41,12,1) 0%, rgba(240,47,23,1) 0%, rgba(84,147,242,1) 100%);
+	background: linear-gradient(to right, rgba(238,81,92,1) 0%, rgba(241,111,92,1) 0%, rgba(246,41,12,1) 0%, rgba(240,47,23,1) 0%, rgba(84,147,242,1) 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ee515c', endColorstr='#5493f2', GradientType=1 );
+}
+@media screen and (max-width: 1800px){
+	.headline {
+		font-size: 35px;
+	}
+	.sale {
+		bottom: 20px;
+	}
+}
 
 
 
