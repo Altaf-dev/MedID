@@ -121,8 +121,8 @@ li a {
 	display: flex;
 	justify-content: space-around;
     background-color: black;
-	/*background-color: rgba(0,0,0,0.1);*/
-	opacity: .7;
+	background-color: rgba(0,0,0,0.1);
+	/*opacity: .7;*/
 }
 .block-bangle  {
 	display: flex;
