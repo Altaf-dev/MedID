@@ -114,3 +114,34 @@ li a {
 	background-color: #ff5656;
 	color: #fff;
 }
+.info-block {
+	position: absolute;
+	width: 460px;
+	display: flex;
+	justify-content: space-around;
+	background-color: black;
+	opacity: .7;
+}
+.block-bangle  {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+.bangle1 {
+	border-bottom: 1px solid #fff;
+	padding: 0px 30px 30px 30px;
+	margin-bottom: 0;
+}
+.bangle  {
+	border-bottom: 3px solid #fff;
+	width: 105px;
+}
+.info-block h2 {
+	font-size: 34px;
+	font-weight: 300;
+	color: white;
+	text-align: center;
+}
+.info-block img {
+	padding-top: 21px;
+}
