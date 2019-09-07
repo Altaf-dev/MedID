@@ -187,7 +187,7 @@ button {
 	box-sizing: border-box;
 	flex-direction: column;
 	right: calc((100vw - 1140px) / 2);
-	bottom: 70px;
+	bottom: 30px;
 	z-index: 3;
 }
 .headline {
@@ -224,7 +224,15 @@ button {
 		bottom: 20px;
 	}
 }
+@media screen and (max-width: 1366px){
+	.title-item {
+		padding-top: 20px;
+	}
+	.description {
+		margin-top: 25px;
 
+	}
+}
 
 
 
