@@ -1,5 +1,7 @@
 body{
     font-family: 'Roboto', sans-serif;
+	margin: 0;
+	padding: 0;
 }
 body ul {
     padding: 0;
@@ -25,6 +27,7 @@ li a {
 	background-size: cover;
 	background-repeat: no-repeat;
 	height: 100vh;
+	max-height: 1000px;
 }
 .header {
     font-size: 18px;
@@ -117,16 +120,40 @@ li a {
 }
 .info-block {
 	position: relative;
-	height: 100%;
 }
 .bg {
 	position: absolute;
+	top: 0;
+	left: 0;
 	width: 460px;
-	height: 100%;
-	background-color: black;
-	border: 2px solid red;
+	height: calc(100vh - 94px);
+	max-height: 906px;
+	background-color: rgba(0,0,0,.6);
+	z-index: 1;
 }
+.bangles {
+	width: 460px;
+}
+.bangle h2 {
+	margin: 0;
+	font-size: 30px;
+	font-weight: 400;
+	color: #fff;
+	text-align: center;
+}
+.bangle {
+	position: relative;
+	z-index: 2;
 
+}
+.qr-title {
+	border-bottom: 1px solid #fff;
+	width: 105px;
+}
+.bangle-image {
+	display: block;
+	text-align: center;
+}
 
 
 
