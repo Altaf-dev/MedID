@@ -116,35 +116,45 @@ li a {
 	color: #fff;
 }
 .info-block {
+	position: relative;
+	height: 100%;
+}
+.bg {
 	position: absolute;
 	width: 460px;
-	display: flex;
-	justify-content: space-around;
-    background-color: black;
-	background-color: rgba(0,0,0,0.1);
-	/*opacity: .7;*/
+	height: 100%;
+	background-color: black;
+	border: 2px solid red;
 }
-.block-bangle  {
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-    opacity: 0.5;
-}
-.bangle1 {
-	border-bottom: 1px solid #fff;
-	padding: 0px 30px 30px 30px;
-	margin-bottom: 0;
-}
-.bangle  {
-	border-bottom: 3px solid #fff;
-	width: 105px;
-}
-.info-block h2 {
-	font-size: 34px;
-	font-weight: 300;
-	color: white;
-	text-align: center;
-}
-.info-block img {
-	padding-top: 21px;
-}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
