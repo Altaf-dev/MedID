@@ -239,7 +239,7 @@ button {
 	display: flex;
 	justify-content: space-between;
 }
-.advantages span {
+.advantages h3 {
 	color: #008cce;
 	font-size: 24px;
 	font-weight: 300;
