@@ -16,6 +16,14 @@ button {
 	border: none;
 	outline: none;
 }
+:root {
+	box-sizing: border-box;
+}
+*,
+::before,
+::after {
+	box-sizing: inherit;
+}
 .container {
 	box-sizing: border-box;
     width: 1170px;
@@ -165,6 +173,9 @@ button {
 	text-align: center;
 	margin-top: 20px;
 }
+.bangle-image img {
+	height: 100%;
+}
 .description {
 	width: 460px;
 	position: relative;
@@ -216,6 +227,61 @@ button {
 	background: linear-gradient(to right, rgba(238,81,92,1) 0%, rgba(241,111,92,1) 0%, rgba(246,41,12,1) 0%, rgba(240,47,23,1) 0%, rgba(84,147,242,1) 100%);
 	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ee515c', endColorstr='#5493f2', GradientType=1 );
 }
+.modern {
+	text-align: center;
+	color: #585858;
+	font-size: 34px;
+	font-weight: 300;
+	padding: 42px 0;
+}
+.advantages {
+	display: flex;
+	flex-basis: 30%;
+}
+.advantages span {
+	color: #008cce;
+	font-size: 24px;
+	font-weight: 300;
+	padding-top: 50px;
+}
+.promo-block {
+	display: flex;
+	flex-direction: column;
+	text-align: center;
+}
+.promo-block p {
+	padding: 34px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 @media screen and (max-width: 1800px){
 	.headline {
 		font-size: 35px;
