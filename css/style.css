@@ -247,7 +247,6 @@ button {
 }
 .promo-block {
 	position: relative;
-	/*border: 1px solid ;*/
 	display: flex;
 	flex-basis: 30%;
 	flex-direction: column;
@@ -298,6 +297,44 @@ button {
 
 
 
+
+
+
+@media screen and (max-width: 425px) {
+    .header {
+        height: 150px;
+    }
+    .logo {
+        width: 243px;
+        height: 93px;
+    }
+    .bg {
+        width: 395px;
+    }
+    .bangle h2 {
+        font-size: 15px;
+    }
+    .title-item {
+        width: 50px;
+        padding: 15px 0 10px 0;
+    }
+    .bangles {
+        width: 395px;
+        padding: 0 40px 0 65px;
+    }
+    .bangle-image img {
+        height: 210px;
+    }
+    .description p {
+        font-size: 15px;
+        font-weight: 300;
+    }
+    .description {
+        width: 395px;
+        padding: 0 45px;
+
+    }
+}
 
 
 
