@@ -223,6 +223,10 @@ button {
 	background: linear-gradient(to right, rgba(238,81,92,1) 0%, rgba(241,111,92,1) 0%, rgba(246,41,12,1) 0%, rgba(240,47,23,1) 0%, rgba(84,147,242,1) 100%);
 	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ee515c', endColorstr='#5493f2', GradientType=1 );
 }
+.content {
+	background-color: #f2f2f2;
+	position: relative;
+}
 .modern {
 	text-align: center;
 	color: #585858;
@@ -265,10 +269,39 @@ button {
 	left: 343px;
 	top: 70px;
 }
+.black-bangle {
+	position: absolute;
+	right: 0;
+	top: 115px;
+	display: block;
+	text-align: center;
+}
+.black-bangle img {
+	height: 100%;
+}
+.form {
+	text-align: center;
+	color: #585858;
+	font-size: 34px;
+	font-weight: 300;
+	padding: 48px 0;
+}
+.about-bungle {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+.for-whom {
+	position: relative;
+	flex-basis: 40%;
+	text-align: center;
+}
+.about-from {
+	display: flex;
+	justify-content: space-between;
+	color: #585858;
 
-
-
-
+}
 
 
 
@@ -334,10 +367,13 @@ button {
 
 @media screen and (max-width: 1800px){
 	.headline {
-		font-size: 35px;
+		font-size: 34px;
 	}
 	.sale {
 		bottom: 20px;
+	}
+	.black-bangle img {
+		height: 250px;
 	}
 }
 @media screen and (max-width: 1366px){
@@ -346,8 +382,8 @@ button {
 	}
 	.description {
 		margin-top: 25px;
-
 	}
+
 }
 
 
