@@ -297,6 +297,10 @@ button {
 	width: 555px;
 	height: 405px;
 	margin-bottom: 30px;
+	transition: 0.5s;
+}
+.for-whom:hover {
+	box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
 }
 .info {
 	position: absolute;
@@ -309,6 +313,15 @@ button {
 	background-color: white;
 	height: 100px;
 	align-items: center;
+}
+.about-from h3 {
+	color: #585858;
+	font-size: 24px;
+	font-weight: 300;
+	padding: 0 30px;
+}
+.btn-info {
+	cursor: pointer;
 }
 .red-bangle {
 	position: absolute;
