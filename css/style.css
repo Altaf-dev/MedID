@@ -72,6 +72,9 @@ button {
 	width: 243px;
 	margin-right: 10px;
 }
+.scan {
+	display: none;
+}
 .about {
  	position: relative;
     transition: .3s ease all;
@@ -371,25 +374,36 @@ button {
 
 
 
-
-
-
-
-
-
-
-
-
-
+/*Медиазапросы*/
 
 @media screen and (max-width: 425px) {
     .header {
-        height: 150px;
+		padding: 0;
+		width: 395px;
+        height: 180px;
+		flex-direction: column;
     }
     .logo {
         width: 243px;
         height: 93px;
+		margin: 0 auto;
     }
+	.nav-menu {
+		padding: 5px 0 10px;
+		align-items: center;
+	}
+	.menu {
+		width: 200px;
+		height: 50px;
+		align-items: center;
+	}
+	.scan {
+		display: block;
+		color: #203352;
+		padding: 10px;
+		border-radius: 50px;
+		font-weight: 600;
+	}
     .bg {
         width: 395px;
     }
