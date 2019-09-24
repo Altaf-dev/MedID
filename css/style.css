@@ -352,7 +352,7 @@ button {
 }
 .footer a:hover {
 	color: #ff5656;
-
+    text-decoration: underline;
 }
 
 
