@@ -337,10 +337,49 @@ button {
 .red-bangle img {
 	height: 100%;
 }
+/*.inline-image {*/
+	/*display: flex;*/
+	/*justify-content: space-between;*/
+	/*padding-bottom: 50px;*/
+/*}*/
 .inline-image {
 	display: flex;
 	justify-content: space-between;
-	padding-bottom: 50px;
+}
+.image-item {
+	display: flex;
+	width: 165px;
+	height: 165px;
+}
+.item-1 {
+	background-image: url("../img/a.png");
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+.item-2 {
+	background-image: url("../img/b.png");
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+.item-3 {
+	background-image: url("../img/c.png");
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+.item-4 {
+	background-image: url("../img/d.png");
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+.item-5 {
+	background-image: url("../img/e.png");
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+.item-6 {
+	background-image: url("../img/f.png");
+	background-repeat: no-repeat;
+	background-size: cover;
 }
 .footer-container {
 	width: 1170px;
