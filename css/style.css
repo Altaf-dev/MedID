@@ -309,6 +309,10 @@ button {
 .for-whom:hover {
 	box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
 }
+.for-whom img {
+	width: 100%;
+	height: 100%;
+}
 .info {
 	position: absolute;
 	bottom: 0;
@@ -316,16 +320,17 @@ button {
 }
 .about-from {
 	display: flex;
-	justify-content: space-around;
+	justify-content: space-between;
 	background-color: white;
 	height: 100px;
 	align-items: center;
+	padding: 0 20px;
 }
 .about-from h3 {
 	color: #585858;
 	font-size: 24px;
 	font-weight: 400;
-	padding: 0 30px;
+	text-align: center;
 }
 .btn-info {
 	cursor: pointer;
@@ -349,6 +354,7 @@ button {
 .inline-image {
 	display: flex;
 	justify-content: space-between;
+	padding-bottom: 20px;
 }
 .image-item {
 	display: flex;
@@ -422,17 +428,46 @@ button {
 
 
 /*Медиазапросы*/
-@media screen and (max-width: 1366px) {
-}
-@media screen and (max-width: 1152px){
+@media all {
 	.container {
 		width: 100%;
 	}
+}
+@media screen and (max-width: 1200px) and (min-width: 1024px){
 	.sale {
-		width: 45%;
-		display: flex;
+		width: 50%;
+		right: 15px;
 	}
-
+	.medid-item {
+		width: 80%;
+	}
+	.form {
+		padding: 24px 0;
+	}
+	.black-bangle {
+		display: none;
+	}
+	.red-bangle {
+		display: none;
+	}
+	.about-bungle {
+		justify-content: space-evenly;
+		width: 90%;
+		margin: 0 auto;
+	}
+	.for-whom {
+		width: 45%;
+		height: 45%;
+	}
+	.footer-container {
+		width: 100%;
+	}
+}
+@media (max-width: 1024px) and (min-width: 640px) {
+	.image-item {
+		width: 150px;
+		height: 150px;
+	}
 }
 @media screen and (max-width: 425px) {
 }
