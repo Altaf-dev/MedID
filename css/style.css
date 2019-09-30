@@ -424,19 +424,17 @@ button {
 /*Медиазапросы*/
 @media screen and (max-width: 1366px) {
 }
-@media screen and (max-width: 1800px){
-}
-@media screen and (max-width: 425px) {
-
+@media screen and (max-width: 1152px){
 	.container {
 		width: 100%;
 	}
-	.header{
-		display: block;
+	.sale {
+		width: 45%;
+		display: flex;
 	}
-	.bg {
-		width: 100%;
-	}
+
+}
+@media screen and (max-width: 425px) {
 }
 @media screen and (max-width: 320px) {
 
