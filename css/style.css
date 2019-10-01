@@ -222,7 +222,7 @@ button {
 	color: #fff;
 	background: rgba(238,81,92,1);
 	background: -moz-linear-gradient(left, rgba(238,81,92,1) 0%, rgba(241,111,92,1) 0%, rgba(246,41,12,1) 0%, rgba(240,47,23,1) 0%, rgba(84,147,242,1) 100%);
-	background: -webkit-gradient(left top, right top, color-stop (0%, rgba(238,81,92,1)), color-stop(0%, rgba(241,111,92,1)), color-stop(0%, rgba(246,41,12,1)), color-stop(0%, rgba(240,47,23,1)), color-stop(100%, rgba(84,147,242,1)));
+	background: -webkit-gradient(left top, right top, color-stop,(0%, rgba(238,81,92,1)), color-stop(0%, rgba(241,111,92,1)), color-stop(0%, rgba(246,41,12,1)), color-stop(0%, rgba(240,47,23,1)), color-stop(100%, rgba(84,147,242,1)));
 	background: -webkit-linear-gradient(left, rgba(238,81,92,1) 0%, rgba(241,111,92,1) 0%, rgba(246,41,12,1) 0%, rgba(240,47,23,1) 0%, rgba(84,147,242,1) 100%);
 	background: -o-linear-gradient(left, rgba(238,81,92,1) 0%, rgba(241,111,92,1) 0%, rgba(246,41,12,1) 0%, rgba(240,47,23,1) 0%, rgba(84,147,242,1) 100%);
 	background: -ms-linear-gradient(left, rgba(238,81,92,1) 0%, rgba(241,111,92,1) 0%, rgba(246,41,12,1) 0%, rgba(240,47,23,1) 0%, rgba(84,147,242,1) 100%);
@@ -347,11 +347,6 @@ button {
 .red-bangle img {
 	height: 100%;
 }
-/*.inline-image {*/
-	/*display: flex;*/
-	/*justify-content: space-between;*/
-	/*padding-bottom: 50px;*/
-/*}*/
 .inline-image {
 	display: flex;
 	justify-content: space-between;
@@ -361,42 +356,26 @@ button {
 	display: flex;
 	width: 165px;
 	height: 165px;
+	background-repeat: no-repeat;
+	background-size: cover;
 }
 .item-1 {
 	background-image: url("../img/a.png");
-	background-repeat: no-repeat;
-	background-size: cover;
 }
 .item-2 {
 	background-image: url("../img/b.png");
-	background-repeat: no-repeat;
-	background-size: cover;
 }
 .item-3 {
 	background-image: url("../img/c.png");
-	background-repeat: no-repeat;
-	background-size: cover;
 }
 .item-4 {
 	background-image: url("../img/d.png");
-	background-repeat: no-repeat;
-	background-size: cover;
 }
 .item-5 {
 	background-image: url("../img/e.png");
-	background-repeat: no-repeat;
-	background-size: cover;
 }
 .item-6 {
 	background-image: url("../img/f.png");
-	background-repeat: no-repeat;
-	background-size: cover;
-}
-.footer-container {
-	width: 1170px;
-	padding-left: 15px;
-	padding-right: 15px;
-	margin: 0 auto;
 }
 .footer {
 	display: flex;
@@ -522,8 +501,6 @@ button {
 @media screen and (max-width: 425px) {
 }
 @media screen and (max-width: 320px) {
-
-
 }
 
 
