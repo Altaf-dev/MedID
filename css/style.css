@@ -342,6 +342,7 @@ button {
 	display: block;
 	text-align: center;
 	height: 135px;
+	justify-content: space-between;
 }
 .red-bangle img {
 	height: 100%;
@@ -429,12 +430,11 @@ button {
 
 /*Медиазапросы*/
 
-@media all {
+
+@media screen and (max-width: 1200px) {
 	.container {
 		width: 100%;
 	}
-}
-@media screen and (max-width: 1200px) {
 	.sale {
 		width: 50%;
 		right: 15px;
@@ -455,7 +455,7 @@ button {
 		display: none;
 	}
 	.about-bungle {
-		justify-content: space-evenly;
+		justify-content: space-between;
 		width: 90%;
 		margin: 0 auto;
 	}
@@ -475,6 +475,9 @@ button {
 
 /*}*/
 @media screen and (max-width: 768px) {
+	.container {
+		width: 100%;
+	}
 	.bg {
 		width: 55%;
 	}
