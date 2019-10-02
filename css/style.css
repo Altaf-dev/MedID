@@ -415,11 +415,47 @@ button {
 	.bg {
 		height: 539px;
 	}
+	.bangles {
+		padding: 0 36px 0 50px;
+	}
 	.bangle-image {
 		height: 250px;
 	}
+	.black-bangle {
+		height: 200px;
+	}
+	.red-bangle {
+		display: none;
+	}
 }
 @media screen and (max-width: 1024px) {
+	.container {
+		width: 100%;
+	}
+	.bg {
+		height: 599px;
+	}
+	.sale {
+		width: 470px;
+		right: 20px;
+	}
+	.medid-item {
+		width: 470px;
+	}
+	.black-bangle {
+		display: none;
+	}
+	.form {
+		padding: 0 0 24px;
+	}
+	.for-whom {
+		width: 480px;
+		height: 370px;
+	}
+	.image-item {
+		width: 150px;
+		height: 150px;
+	}
 }
 @media screen and (max-width: 768px) {
 }
