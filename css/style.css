@@ -164,6 +164,9 @@ button {
 	z-index: 2;
 	text-align: center;
 }
+.scan {
+	/*display: none;*/
+}
 .title-item {
 	border-bottom: 1px solid #fff;
 	width: 105px;
@@ -463,8 +466,31 @@ button {
 	}
 }
 @media screen and (max-width: 768px) {
+	.bg {
+		width: 100%;
+	}
+	.bangles {
+		width: 100%;
+	}
+	.description {
+		width: 100%;
+	}
 	.description p {
 		font-size: 20px;
+	}
+	.sale {
+		left: 0;
+	}
+	.medid{
+		width: 73%;
+	}
+	.headline {
+		padding-left: 50px;
+		inline-size: auto;
+	}
+	.btn {
+		padding: 20px 60px;
+		margin-right: 365px;
 	}
 }
 @media screen and (max-width: 425px) {
