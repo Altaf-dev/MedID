@@ -39,6 +39,7 @@ button {
 	background-repeat: no-repeat;
 	height: 100vh;
 	max-height: 1000px;
+	min-height: 576px;
 }
 .header {
     font-size: 18px;
@@ -140,7 +141,7 @@ button {
 	top: 0;
 	left: 0;
 	width: 460px;
-	height: calc(100vh - 94px);
+	height: calc(100vh - 93px);
 	max-height: 906px;
 	background-color: rgba(0,0,0,.6);
 	z-index: 1;
@@ -410,93 +411,17 @@ button {
 Т.е. тебе надо решить задачу все необходимые данные у тебя есть, здесь задачка больше не на знание css а на
 логику. Жду ответа.*/
 
-@media screen and (max-width: 1200px) {
-	.container {
-		width: 100%;
+@media screen and (max-width: 1280px) {
+	.bg {
+		height: 539px;
 	}
-	.sale {
-		width: 50%;
-		right: 15px;
-	}
-	.medid-item {
-		width: 80%;
-	}
-	.headline {
-		text-align: end;
-	}
-	.form {
-		padding: 24px 0;
-	}
-	.black-bangle {
-		display: none;
-	}
-	.red-bangle {
-		display: none;
-	}
-	.about-bungle {
-		justify-content: space-between;
-		width: 90%;
-		margin: 0 auto;
-	}
-	.for-whom {
-		width: 45%;
-		height: 45%;
-	}
-	.footer-container {
-		width: 100%;
-	}
-	.image-item {
-		width: 150px;
-		height: 150px;
+	.bangle-image {
+		height: 250px;
 	}
 }
-/*@media screen and (max-width: 1024px) {*/
-
-/*}*/
+@media screen and (max-width: 1024px) {
+}
 @media screen and (max-width: 768px) {
-	.container {
-		width: 100%;
-	}
-	.bg {
-		width: 55%;
-	}
-	.bangles {
-		width: 387px;
-	}
-	.bangle-image img{
-		width: 70%;
-	}
-	.description {
-		width: 387px;
-	}
-	.modern {
-		padding: 20px 50px;
-	}
-	.advantages h3 {
-		font-size: 20px;
-		padding-top: 10px;
-	}
-	.heartrate:before {
-		content: "";
-	}
-	.heartrate:after {
-		content: "";
-	}
-	.about-from {
-		height: 60px;
-	}
-	.about-from h3 {
-		width: 180px;
-		font-size: 15px;
-		text-align: left;
-	}
-	.about-from :first-child img {
-		width: 60%;
-	}
-	.image-item {
-		width: 100px;
-		height: 100px;
-	}
 }
 @media screen and (max-width: 425px) {
 }
