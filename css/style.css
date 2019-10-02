@@ -411,58 +411,67 @@ button {
 Т.е. тебе надо решить задачу все необходимые данные у тебя есть, здесь задачка больше не на знание css а на
 логику. Жду ответа.*/
 
-@media screen and (max-width: 1280px) {
-	.bg {
-		height: 539px;
+
+@media screen and (max-width: 1024px) {
+	.container {
+		width: 100%;
+		height: 100%;
 	}
-	.bangles {
-		padding: 0 36px 0 50px;
+	.description p {
+		font-size: 25px;
 	}
-	.bangle-image {
-		height: 250px;
+	.sale {
+		right: calc((100vw - 994px) / 2);
+		padding-right: 10px;
+	}
+	.medid-item {
+		width: 80%;
+	}
+	.headline {
+		width: 400px;
+		padding-left: 110px;
 	}
 	.black-bangle {
-		height: 200px;
+		display: none;
+	}
+	.heartrate:after {
+		right: 300px;
+	}
+	.heartrate:before {
+		left: 300px;
+	}
+	.advantages h3 {
+		padding-top: 20px;
+	}
+	.promo-block p {
+		padding-top: 17px;
+		padding-bottom: 15px;
+	}
+	.form {
+		padding: 14px 0 24px;
 	}
 	.red-bangle {
 		display: none;
 	}
-}
-@media screen and (max-width: 1024px) {
-	.container {
-		width: 100%;
-	}
-	.bg {
-		height: 599px;
-	}
-	.sale {
-		width: 470px;
-		right: 20px;
-	}
-	.medid-item {
-		width: 470px;
-	}
-	.black-bangle {
-		display: none;
-	}
-	.form {
-		padding: 0 0 24px;
-	}
 	.for-whom {
-		width: 480px;
-		height: 370px;
+		width: 490px;
+		height: 350px;
 	}
 	.image-item {
-		width: 150px;
-		height: 150px;
+		width: 160px;
+		height: 160px;
 	}
 }
 @media screen and (max-width: 768px) {
+	.description p {
+		font-size: 20px;
+	}
 }
 @media screen and (max-width: 425px) {
 }
 @media screen and (max-width: 320px) {
 }
+
 
 
 
