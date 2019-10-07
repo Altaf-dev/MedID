@@ -26,7 +26,8 @@ button {
 	padding: 0;
 }
 .container {
-    width: 1170px;
+    width: 100%;
+	max-width: 1170px;
     padding-left: 15px;
     padding-right: 15px;
     margin: 0 auto;
@@ -39,7 +40,7 @@ button {
 	background-repeat: no-repeat;
 	height: 100vh;
 	max-height: 1000px;
-	min-height: 576px;
+	min-height: 675px;
 }
 .header {
     font-size: 18px;
@@ -49,6 +50,10 @@ button {
     align-items: center;
     height: 93px;
     border-bottom: 1px solid #fff;
+}
+.scan {
+	/*display: none;*/
+
 }
 .logo {
 	background-color: #ff5656;
@@ -75,6 +80,11 @@ button {
 }
 .scan {
 	display: none;
+	border-radius: 50px;
+	margin-left: auto;
+	padding: 30px 70px;
+	font-size: 18px;
+	text-transform: uppercase;
 }
 .about {
  	position: relative;
@@ -143,8 +153,10 @@ button {
 	width: 460px;
 	height: calc(100vh - 93px);
 	max-height: 906px;
+	min-height: 582px;
 	background-color: rgba(0,0,0,.6);
 	z-index: 1;
+
 }
 .bangles {
 	width: 460px;
@@ -300,16 +312,36 @@ button {
 .about-bungle {
 	display: flex;
 	flex-wrap: wrap;
-	justify-content: space-between;
+	justify-content: space-around;
 }
+
+
+
 .for-whom {
 	display: block;
 	position: relative;
-	width: 555px;
+	/*width: 555px;*/
+	flex-basis: 45%;
 	height: 405px;
 	margin-bottom: 30px;
 	transition: 0.5s;
+
+	/*overflow: hidden;  скрыть описание*/
 }
+.for-item {
+	width: 100%;
+	height: 380px;
+	background-repeat: no-repeat;
+	background-size: contain;
+	background-position: center;
+}
+.old-men {
+	background-image: url("../img/old.png");
+}
+
+
+
+
 .for-whom:hover {
 	box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
 }
@@ -414,88 +446,152 @@ button {
 Т.е. тебе надо решить задачу все необходимые данные у тебя есть, здесь задачка больше не на знание css а на
 логику. Жду ответа.*/
 
-
-@media screen and (max-width: 1024px) {
-	.container {
-		width: 100%;
-		height: 100%;
-	}
-	.description p {
-		font-size: 25px;
-	}
-	.sale {
-		right: calc((100vw - 994px) / 2);
-		padding-right: 10px;
-	}
+@media screen and (max-width: 1200px) {
 	.medid-item {
-		width: 80%;
+		height: 100px;
 	}
 	.headline {
-		width: 400px;
-		padding-left: 110px;
+		text-align: right;
+		font-size: 28px;
 	}
-	.black-bangle {
-		display: none;
+	.title-item {
+		width: 85px;
 	}
-	.heartrate:after {
-		right: 300px;
+	.bangles {
+		padding: 0 36px 0 50px;
 	}
-	.heartrate:before {
-		left: 300px;
+	.bangle img{
+		height: 250px;
 	}
-	.advantages h3 {
-		padding-top: 20px;
+	.sale {
+		position: static;
+		margin-top: -205px;
 	}
-	.promo-block p {
-		padding-top: 17px;
-		padding-bottom: 15px;
-	}
-	.form {
-		padding: 14px 0 24px;
+
+	.btn {
+		padding: 25px 65px;
 	}
 	.red-bangle {
 		display: none;
 	}
-	.for-whom {
-		width: 490px;
-		height: 350px;
+	.black-bangle {
+		display: none;
 	}
-	.image-item {
-		width: 160px;
-		height: 160px;
+}
+
+@media screen and (max-width: 1024px) {
+	.bg {
+		width: 400px;
+	}
+	.bangles {
+		padding: 0 75px 0 30px;
+	}
+	.description {
+		width: 430px;
+		padding: 0 27px;
+	}
+	.about-bungle {
+		flex-direction: column;
+		align-items: center;
+	}
+	.for-whom {
+		width: 60%;
+	}
+}
+@media screen and (max-width: 960px) {
+	.medid-item {
+		height: 80px;
+	}
+	.headline {
+		font-size: 26px;
+		width: 400px;
+		margin-left: auto;
+	}
+}
+@media screen and (max-width: 789px) {
+	.medid-item {
+		height: 75px;
 	}
 }
 @media screen and (max-width: 768px) {
+	.main-page {
+		height: 1000px;
+	}
+	.header {
+		height: 210px;
+		flex-direction: column;
+	}
+	.logo {
+		margin: 0 auto;
+		height: 93px;
+	}
+	.scan {
+		display: block;
+		margin: 0 0 10px 0;
+		padding: 15px 50px;
+	}
 	.bg {
+		height: 790px;
 		width: 100%;
+		z-index: 1;
+	}
+	.bangle img{
+		height: 280px;
+		z-index: 3;
 	}
 	.bangles {
-		width: 100%;
+		margin: 0 auto;
+		padding: 0 10px 0 30px;
 	}
 	.description {
-		width: 100%;
-	}
-	.description p {
-		font-size: 20px;
+		margin: 0 auto;
+		padding-top: 20px;
 	}
 	.sale {
+		position: absolute;
 		left: 0;
+		right: 0;
+		margin: 0 auto;
+		z-index: 2;
 	}
-	.medid{
-		width: 73%;
+	.medid {
+		text-align: center;
 	}
 	.headline {
-		padding-left: 50px;
-		inline-size: auto;
+		margin: 0 auto;
+		width: 100%;
+		text-align: center;
+		padding: 0 15px;
 	}
 	.btn {
-		padding: 20px 60px;
-		margin-right: 365px;
+		margin: 0 auto;
 	}
-}
-@media screen and (max-width: 425px) {
-}
-@media screen and (max-width: 320px) {
+	.black-bangle {
+		display: none;
+	}
+	.red-bangle {
+		display: none;
+	}
+	.advantages {
+		flex-basis: 100%;
+		flex-direction: column;
+	}
+	.heartrate:before{
+		display: none;
+	}
+	.heartrate:after {
+		display: none;
+	}
+	.for-whom {
+		width: 100%;
+	}
+	.inline-image {
+		flex-wrap: wrap;
+		justify-content: space-around;
+	}
+	.image-item {
+		margin-top: 15px;
+	}
 }
 
 
