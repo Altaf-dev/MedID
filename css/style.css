@@ -314,19 +314,47 @@ button {
 	flex-wrap: wrap;
 	justify-content: space-around;
 }
-
-
-
 .for-whom {
 	display: block;
 	position: relative;
-	/*width: 555px;*/
 	flex-basis: 45%;
-	height: 405px;
+	height: calc(100vw - 30%);
 	margin-bottom: 30px;
 	transition: 0.5s;
-
-	/*overflow: hidden;  скрыть описание*/
+	/*overflow: hidden;*/
+}
+.about-from:before {
+	position: absolute;
+	content: "";
+	left: 35px;
+}
+.about-from1:before {
+	content: url("../img/heart.png");
+	top: 20px;
+}
+.about-from2:before {
+	content: url("../img/Medicine.png");
+	top: 20px;
+}
+.about-from3:before {
+	content: url("../img/Family.png");
+	top: 20px;
+}
+.about-from4:before {
+	content: url("../img/Earth.png");
+	top: 15px;
+}
+.about-from:after {
+	position: absolute;
+	content: url("../img/btn.png");
+	right: 35px;
+	top: 30px;
+}
+.about-from h3 {
+	color: #585858;
+	font-size: 23px;
+	font-weight: 400;
+	text-align: center;
 }
 .for-item {
 	width: 100%;
@@ -335,41 +363,39 @@ button {
 	background-size: contain;
 	background-position: center;
 }
+.for-item {
+	background-repeat: no-repeat;
+	background-size: cover;
+}
 .old-men {
 	background-image: url("../img/old.png");
 }
-
-
-
-
+.medic {
+	background-image: url("../img/md.png");
+}
+.kids {
+	background-image: url("../img/kids.png");
+}
+.traveler {
+	background-image: url("../img/all.png");
+}
 .for-whom:hover {
 	box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
 }
-.for-whom img {
-	width: 100%;
-	height: 100%;
-}
 .info {
 	position: absolute;
-	bottom: 0;
+	height: 100%;
 	width: 100%;
-}
-.about-from {
-	display: flex;
-	justify-content: space-between;
-	background-color: white;
-	height: 100px;
-	align-items: center;
-	padding: 0 15px;
-}
-.about-from h3 {
-	color: #585858;
-	font-size: 24px;
-	font-weight: 400;
+	background-color: #fff;
+	bottom: -285px;
+	padding: 0 20px;
 	text-align: center;
 }
-.btn-info {
-	cursor: pointer;
+.info p {
+	position: absolute;
+	top: 110px;
+	right: 5px;
+	padding: 0 20px;
 }
 .red-bangle {
 	position: absolute;
