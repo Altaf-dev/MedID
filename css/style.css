@@ -354,8 +354,7 @@ button {
 	color: #585858;
 	font-size: 23px;
 	font-weight: 400;
-	text-align: center;
-	padding: 0 20px;
+    padding: 0 20px;
 }
 .about-from {
 	display: flex;
@@ -383,7 +382,6 @@ button {
 .traveler {
 	background-image: url("../img/all.png");
 }
-
 .for-whom:hover {
 	box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
 }
@@ -395,6 +393,7 @@ button {
 	bottom: -285px;
 	padding: 0 20px;
 	text-align: center;
+    align-items: center;
 }
 .info p {
 	position: absolute;
@@ -467,10 +466,7 @@ button {
     text-decoration: underline;
 }
 
-
-
 /*Медиазапросы*/
-
 
 @media screen and (max-width: 1200px) {
 	.medid-item {
@@ -626,9 +622,57 @@ button {
 	}
 }
 @media screen and (max-width: 490px){
+	.menu {
+		width: 200px;
+	}
+	.bangles {
+		width: 100%;
+	}
+	.bangle img {
+		height: 260px;
+	}
 	.about-from h3{
 		font-size: 16px;
 	}
+}
+@media screen and (max-width: 425px) {
+	.menu {
+		width: 175px;
+	}
+	.description {
+		width: 100%;
+		text-align: center;
+	}
+	.bangle img {
+		height: 200px;
+	}
+
+}
+@media screen and (max-width: 320px) {
+	.logo {
+		height: 75px;
+	}
+	.menu {
+		width: 150px;
+	}
+	.header {
+		font-size: 15px;
+	}
+	.medid-item {
+		height: 60px;
+	}
+	.headline {
+		font-size: 20px;
+		padding: 20px;
+	}
+	.bangle img {
+		height: 200px;
+	}
+	.about-from h3 {
+		font-size: 13px;
+		padding: 0 50px 0 80px;
+	}
+
 }
 
 
