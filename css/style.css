@@ -51,10 +51,6 @@ button {
     height: 93px;
     border-bottom: 1px solid #fff;
 }
-.scan {
-	/*display: none;*/
-
-}
 .logo {
 	background-color: #ff5656;
 	width: 243px;
@@ -85,6 +81,9 @@ button {
 	padding: 30px 70px;
 	font-size: 18px;
 	text-transform: uppercase;
+    font-weight: 600;
+    background-color: #ff5656;
+    color: #fff;
 }
 .about {
  	position: relative;
