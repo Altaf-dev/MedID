@@ -612,6 +612,7 @@ button {
 	.inline-image {
 		flex-wrap: wrap;
 		justify-content: space-around;
+		padding: 40px;
 	}
 	.image-item {
 		margin-top: 15px;
@@ -642,7 +643,18 @@ button {
 	.bangle img {
 		height: 200px;
 	}
+	.footer img {
+		width: 70%;
+	}
 
+}
+@media screen and (max-width: 375px) {
+	.footer h3 {
+		font-size: 13px;
+	}
+	.footer a {
+		font-size: 13px;
+	}
 }
 @media screen and (max-width: 320px) {
 	.logo {
@@ -667,6 +679,9 @@ button {
 	.about-from h3 {
 		font-size: 13px;
 		padding: 0 50px 0 80px;
+	}
+	.footer h3 {
+		padding-right: 20px;
 	}
 
 }
