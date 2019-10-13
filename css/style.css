@@ -175,9 +175,6 @@ button {
 	z-index: 2;
 	text-align: center;
 }
-.scan {
-	/*display: none;*/
-}
 .title-item {
 	border-bottom: 1px solid #fff;
 	width: 105px;
