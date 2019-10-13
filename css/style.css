@@ -361,6 +361,7 @@ button {
 	right: 35px;
 	top: 40px;
 }
+
 .about-from h3 {
 	color: #585858;
 	font-size: 23px;
@@ -408,9 +409,13 @@ button {
 	cursor: pointer;
 	transition: 1s ease-in-out;
 }
+.about-from:after.info.info-open{
+	transform: rotate(-45deg);
+}
 .info.info-open{
 	bottom: 0;
 }
+
 .info p {
 	position: absolute;
 	top: 110px;
