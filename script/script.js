@@ -7,6 +7,6 @@ document.querySelector('.info2').onclick = function(){
 document.querySelector('.info3').onclick = function(){
     this.classList.toggle('info-open')
 };
-document.querySelector('.info3').onclick = function(){
+document.querySelector('.info4').onclick = function(){
     this.classList.toggle('info-open')
 };
