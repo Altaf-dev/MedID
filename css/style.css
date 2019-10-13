@@ -391,6 +391,9 @@ button {
 	text-align: center;
     align-items: center;
 }
+.info-open{
+	top: 0;
+}
 .info p {
 	position: absolute;
 	top: 110px;
