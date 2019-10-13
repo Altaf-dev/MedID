@@ -341,13 +341,21 @@ button {
 }
 .about-from:after {
 	position: absolute;
-	content: url("../img/btn.png");
+	content: "";
+	border-right: 2px solid #ff5656;
+	border-top: 2px solid #ff5656;
+	padding: 8px;
+	transform: rotate(-45deg);
 	right: 35px;
 	top: 40px;
 }
-.about-from-rotate:after {
-	transform: rotate(180deg);
-}
+/*.about-rotate:after {*/
+/*	position: absolute;*/
+/*	content: url("../img/btn.png");*/
+/*	right: 35px;*/
+/*	top: 40px;*/
+/*	transform: rotate(180deg);*/
+/*}*/
 .about-from h3 {
 	color: #585858;
 	font-size: 23px;
