@@ -349,7 +349,7 @@ button {
 /*	right: 35px;*/
 /*	top: 40px;*/
 /*}*/
-.about-from:after {
+.info .about-from:after {
 	position: absolute;
 	content: "";
 	display: block;
@@ -360,6 +360,10 @@ button {
 	transform: rotate(135deg);
 	right: 35px;
 	top: 40px;
+	transition: 1s ease-in-out;
+}
+.info.info-open .about-from:after{
+	transform: rotate(-45deg);
 }
 
 .about-from h3 {
@@ -409,9 +413,7 @@ button {
 	cursor: pointer;
 	transition: 1s ease-in-out;
 }
-.about-from:after.info.info-open{
-	transform: rotate(-45deg);
-}
+
 .info.info-open{
 	bottom: 0;
 }
