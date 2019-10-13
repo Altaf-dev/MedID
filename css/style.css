@@ -234,7 +234,6 @@ button {
 	color: #fff;
 	background: rgba(238,81,92,1);
 	background: -moz-linear-gradient(left, rgba(238,81,92,1) 0%, rgba(241,111,92,1) 0%, rgba(246,41,12,1) 0%, rgba(240,47,23,1) 0%, rgba(84,147,242,1) 100%);
-	background: -webkit-gradient(left top, right top, color-stop,(0%, rgba(238,81,92,1)), color-stop(0%, rgba(241,111,92,1)), color-stop(0%, rgba(246,41,12,1)), color-stop(0%, rgba(240,47,23,1)), color-stop(100%, rgba(84,147,242,1)));
 	background: -webkit-linear-gradient(left, rgba(238,81,92,1) 0%, rgba(241,111,92,1) 0%, rgba(246,41,12,1) 0%, rgba(240,47,23,1) 0%, rgba(84,147,242,1) 100%);
 	background: -o-linear-gradient(left, rgba(238,81,92,1) 0%, rgba(241,111,92,1) 0%, rgba(246,41,12,1) 0%, rgba(240,47,23,1) 0%, rgba(84,147,242,1) 100%);
 	background: -ms-linear-gradient(left, rgba(238,81,92,1) 0%, rgba(241,111,92,1) 0%, rgba(246,41,12,1) 0%, rgba(240,47,23,1) 0%, rgba(84,147,242,1) 100%);
@@ -346,6 +345,9 @@ button {
 	right: 35px;
 	top: 40px;
 }
+.about-from-rotate:after {
+	transform: rotate(180deg);
+}
 .about-from h3 {
 	color: #585858;
 	font-size: 23px;
@@ -390,9 +392,11 @@ button {
 	padding: 0 20px;
 	text-align: center;
     align-items: center;
+	cursor: pointer;
+	transition: 1s ease-in-out;
 }
-.info-open{
-	top: 0;
+.info.info-open{
+	bottom: 0;
 }
 .info p {
 	position: absolute;
